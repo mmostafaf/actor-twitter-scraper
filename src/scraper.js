@@ -14,6 +14,8 @@ module.exports = {
         var output = {user: {}, tweets: []};
 
         page.on('response', async (response) => {
+     
+             console.log(response)
             if (response.url().includes('/timeline/profile/')) {         
                 try {     
                     const data = await response.json();

@@ -39,7 +39,7 @@ module.exports = {
                             output.user.username = handle;
                         }
                     })
-                    console.log(`Scrapedddddd myyyy ${output.tweets.length} ${handle}'s tweets...`)
+                
                 } catch(err) {
                     //console.log(err)
                 }

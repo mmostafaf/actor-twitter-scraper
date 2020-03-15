@@ -44,9 +44,9 @@ module.exports = {
                 }
             }
         });
-
+        console.log(`scroll is started`)
         infiniteScroll(page, SCROLL_DURATION);
-
+        console.log(`scroll is finished`)
         // scraped desired number of tweets
         do {
             var oldOutputLength = output.tweets.length;

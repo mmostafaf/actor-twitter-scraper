@@ -15,7 +15,7 @@ module.exports = {
 
         page.on('response', async (response) => {
      
-             console.log(response.url())
+             console.log(`rrrrr`)
             if (response.url().includes('/timeline/profile/')) {         
                 try {     
                     const data = await response.json();

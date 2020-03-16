@@ -51,14 +51,14 @@ module.exports = {
         infiniteScroll(page, SCROLL_DURATION);
         console.log(`scroll is finished`)
         // scraped desired number of tweets
-        do {
-            var oldOutputLength = output.tweets.length;
-            if (oldOutputLength > 0) {
-                console.log(`Scraped ${oldOutputLength} ${handle}'s tweets...`)
-            }
-            await new Promise(resolve => setTimeout(resolve, 20000))
-        } while (output.tweets.length < tweetCount && output.tweets.length > oldOutputLength)
-
+//         do {
+//             var oldOutputLength = output.tweets.length;
+//             if (oldOutputLength > 0) {
+//                 console.log(`Scraped ${oldOutputLength} ${handle}'s tweets...`)
+//             }
+//             await new Promise(resolve => setTimeout(resolve, 20000))
+//         } while (output.tweets.length < tweetCount && output.tweets.length > oldOutputLength)
+await new Promise(resolve => setTimeout(resolve, 100000))
         // truncate overflow output due to high SCROLL_DURATION
         if (output.tweets.length > tweetCount) output.tweets.length = tweetCount;
 
